@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS buổi 4</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-3">BÀI TẬP JS BUỔI 4</h1>
+      <ul
+        class="nav nav-pills m-5 d-flex justify-content-center"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item p-2" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-sortNumber-tab"
+            data-toggle="pill"
+            data-target="#pills-sortNumber"
+            type="button"
+            role="tab"
+            aria-controls="pills-sortNumber"
+            aria-selected="true"
+          >
+            Sắp xếp 3 số nguyên
+          </button>
+        </li>
+
+        <li class="nav-item p-2" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-helloMember-tab"
+            data-toggle="pill"
+            data-target="#pills-helloMember"
+            type="button"
+            role="tab"
+            aria-controls="pills-helloMember"
+            aria-selected="false"
+          >
+            Chào thành viên gia đình
+          </button>
+        </li>
+
+        <li class="nav-item p-2" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-chanLe-tab"
+            data-toggle="pill"
+            data-target="#pills-chanLe"
+            type="button"
+            role="tab"
+            aria-controls="pills-chanLe"
+            aria-selected="false"
+          >
+            Tính chẵn lẻ
+          </button>
+        </li>
+
+        <li class="nav-item p-2" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-triangle-tab"
+            data-toggle="pill"
+            data-target="#pills-triangle"
+            type="button"
+            role="tab"
+            aria-controls="pills-triangle"
+            aria-selected="false"
+          >
+            Xét tam giác
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-sortNumber"
+          role="tabpanel"
+          aria-labelledby="pills-sortNumber-tab"
+        >
+          <!-- Nhập 3 số nguyên. In ra theo thứ tự tăng dần -->
+          <section id="sortNumber">
+            <div class="container mt-3 d-flex justify-content-center w-100">
+              <div class="border border-primary">
+                <div class="title text-center mt-3">
+                  <h2 class="bg-primary text-white d-inline-block p-3">
+                    Xếp theo thứ tự tăng dần
+                  </h2>
+                </div>
+
+                <form action="" class="form-inline m-3">
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputNumber1" class="mr-3"
+                      >Nhập số thứ nhất:</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputNumber1"
+                      placeholder="Nhập số thứ nhất"
+                    />
+                  </div>
+
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputNumber2" class="mr-3"
+                      >Nhập số thứ hai:</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputNumber2"
+                      placeholder="Nhập số thứ hai"
+                    />
+                  </div>
+
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputNumber3" class="mr-3"
+                      >Nhập số thứ ba:</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputNumber3"
+                      placeholder="Nhập số thứ ba"
+                    />
+                  </div>
+                </form>
+
+                <div class="d-flex align-items-center m-3">
+                  <button class="btn btn-primary" id="sapXep">
+                    Sắp xếp theo tăng dần
+                  </button>
+                  <div
+                    class="result__sapXep ml-5 text-danger text-uppercase font-weight-bold"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="pills-helloMember"
+          role="tabpanel"
+          aria-labelledby="pills-helloMember-tab"
+        >
+          <!-- // Bài 2: Viết chương trình "chào hỏi" các thành viên trong gia đình: Bố(B), Mẹ (M), anh Trai (A), Em gái (E); -->
+          <section id="helloMember">
+            <div class="container mt-3 d-flex justify-content-center w-100">
+              <div class="border border-primary">
+                <div class="title text-center mt-3">
+                  <h2 class="bg-primary text-white d-inline-block p-3">
+                    Viết chương trình "chào hỏi" các thành viên trong gia đình
+                  </h2>
+                </div>
+
+                <form action="" class="m-3">
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputMemberName" class="mr-3"
+                      >Nhập mối quan hệ gia đình</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputMemberName"
+                      placeholder="Nhập mối quan hệ gia đình"
+                    />
+                  </div>
+                </form>
+
+                <div class="d-flex align-items-center m-3">
+                  <button class="btn btn-primary" id="hello">
+                    Nhấn để chào
+                  </button>
+                  <div
+                    class="result__Hello ml-5 text-danger text-uppercase font-weight-bold"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="pills-chanLe"
+          role="tabpanel"
+          aria-labelledby="pills-chanLe-tab"
+        >
+          <!-- // Bài 3: Nhập 3 số nguyên. xuất ra bao nhiêu số lẻ và bao nhiêu số chẵn -->
+          <section id="chanLe">
+            <div class="container mt-3 d-flex justify-content-center w-100">
+              <div class="border border-primary">
+                <div class="title text-center mt-3">
+                  <h2 class="bg-primary text-white d-inline-block p-3">
+                    Bao nhiêu số lẻ và bao nhiêu số chẵn
+                  </h2>
+                </div>
+
+                <form action="" class="form-inline m-3">
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="Number1" class="mr-3">Nhập số thứ nhất:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="Number1"
+                      placeholder="Nhập số thứ nhất"
+                    />
+                  </div>
+
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="Number2" class="mr-3">Nhập số thứ hai:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="Number2"
+                      placeholder="Nhập số thứ hai"
+                    />
+                  </div>
+
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="Number3" class="mr-3">Nhập số thứ ba:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="Number3"
+                      placeholder="Nhập số thứ ba"
+                    />
+                  </div>
+                </form>
+
+                <div class="d-flex align-items-center m-3">
+                  <button class="btn btn-primary" id="chanLe">Tính toán</button>
+                  <div
+                    class="result__chanLe ml-5 text-danger text-uppercase font-weight-bold"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="pills-triangle"
+          role="tabpanel"
+          aria-labelledby="pills-triangle-tab"
+        >
+          <!-- // Bài 4: Nhập 3 cạnh tam giác, cho biết là tam giác gì? -->
+          <section id="triangle">
+            <div class="container mt-3 d-flex justify-content-center w-100">
+              <div class="border border-primary">
+                <div class="title text-center mt-3">
+                  <h2 class="bg-primary text-white d-inline-block p-3">
+                    Xếp theo thứ tự tăng dần
+                  </h2>
+                </div>
+
+                <form action="" class="form-inline m-3">
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputEdgeA" class="mr-3">Nhập cạnh A:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputEdgeA"
+                      placeholder="Nhập cạnh A"
+                    />
+                  </div>
+
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputEdgeB" class="mr-3">Nhập cạnh B:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputEdgeB"
+                      placeholder="Nhập cạnh B"
+                    />
+                  </div>
+
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputEdgeC" class="mr-3">Nhập cạnh C:</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="inputEdgeC"
+                      placeholder="Nhập cạnh C"
+                    />
+                  </div>
+                </form>
+
+                <div class="d-flex align-items-center m-3">
+                  <button class="btn btn-primary" id="calTriangle">Tính</button>
+                  <div
+                    class="result__Triangle ml-5 text-danger text-uppercase font-weight-bold"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My JS -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
